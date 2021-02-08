@@ -224,7 +224,7 @@ public class OtpView extends AppCompatEditText {
       moveSelectionToEnd();
     }
     if (text.length() == otpViewItemCount && onOtpCompletionListener != null) {
-      onOtpCompletionListener.onOtpCompleted(text.toString());
+      onOtpCompletionListener.onOtpFilled(text.toString());
     }
     makeBlink();
     if (isAnimationEnable) {
