@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     otpView.setOtpCompletionListener(this);
   }
 
-  @Override public void onOtpCompleted(String otp) {
+  @Override public void onOtpFilled(String otp) {
     // do Stuff
     Toast.makeText(this, "OnOtpCompletionListener called", Toast.LENGTH_SHORT).show();
   }
